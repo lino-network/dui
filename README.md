@@ -2,9 +2,19 @@
 Web Dlive UI
 # vue-component-test
 
-## Project setup yellow-repeat
+## Project setup 
 ```
 npm installs
+```
+
+## 文档
+```
+npm run docs:dev
+```
+
+## 文档
+```
+npm run lib
 ```
 
 ### Compiles and hot-reloads for development
