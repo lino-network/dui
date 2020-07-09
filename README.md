@@ -12,7 +12,7 @@ npm installs
 npm run docs:dev
 ```
 
-## 文档
+## npm build
 ```
 npm run lib
 ```
