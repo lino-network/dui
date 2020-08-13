@@ -1,5 +1,7 @@
 <template lang="html">
   <div class="m-colorPicker" tabindex="-1" @blur="closePanel()" ref="colorPicker" v-on:click="event => { event.stopPropagation() }">
+    <Button type="success">主要按钮</Button>
+    <el-button type="success">成功按钮</el-button>
     <!-- 颜色显示小方块 -->
     <div class="colorBtn"
       v-bind:style="`background-color: ${showColor}`"
@@ -65,7 +67,10 @@
 </template>
 
 <script>
-export default {
+import Vue from 'vue'
+import vue from '../../main';
+Vue.extend(vue)
+export default{
   name: 'colorPicker',
   props: {
     // 当前颜色值
@@ -109,6 +114,9 @@ export default {
       bColor: ['#c21401', '#ff1e02', '#ffc12a', '#ffff3a', '#90cf5b', '#00af57', '#00afee', '#0071be', '#00215f', '#72349d'],
       html5Color: this.value
     }
+  },
+  mounted(){
+    console.log(this,vue,Vue)
   },
   computed: {
     // 显示面板颜色
